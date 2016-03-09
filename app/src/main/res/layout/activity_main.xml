@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    tools:context="com.pangypeng.timeline.MainActivity">
+
+    <TextView
+        android:text="2016年3月"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <View
+            android:id="@+id/time_line"
+            android:layout_marginLeft="55dp"
+            android:background="#b3b3b3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+        <TextView
+            android:id="@+id/tv_text"
+            android:text="时光轴"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/time_line"/>
+        <ExpandableListView
+            android:id="@+id/expandlist"
+            android:layout_below="@id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null">
+        </ExpandableListView>
+    </RelativeLayout>
+</LinearLayout>
